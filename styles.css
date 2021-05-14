@@ -1,0 +1,127 @@
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(135, 199, 191, 0.864) 0%,
+    rgba(8, 182, 130, 0.857) 100%
+  );
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+h1 {
+  font-size: 1.01rem;
+}
+
+h2 {
+  font-size: 1.1rem;
+}
+
+div.container {
+  margin: 0 auto;
+  max-width: 1100px;
+  padding-top: 2rem;
+}
+
+div.upper-boxes,
+div.lower-boxes {
+  display: flex;
+  justify-content: space-between;
+}
+
+div.lower-boxes {
+  margin-top: 3rem;
+}
+
+.budget-box,
+.expense-box,
+.budget-total-box,
+.balance-box,
+.expense-total-box,
+.feedback-box {
+  padding: 1rem;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.138);
+  border-radius: 5px;
+}
+
+.budget-box,
+.balance-box,
+.budget-total-box {
+  background-color: white;
+  width: 20vw;
+}
+
+.expense-box {
+  background-color: white;
+  width: 18vw;
+}
+
+.expense-total-box {
+  background-color: white;
+  width: 18vw;
+}
+
+.budget-details,
+.expense-details,
+.budget-total,
+.entry-details,
+.controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.budget-entry input,
+.expense-title input,
+.expense-amount input {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border: 2px solid #08b68217;
+}
+
+div.controls {
+  width: 6vw;
+}
+div.feedback-box {
+  background: linear-gradient(
+    90deg,
+    rgb(226, 70, 49) 0%,
+    rgba(200, 74, 235, 0.885) 50%,
+    rgb(252, 170, 62) 100%
+  );
+  color: white;
+  width: 35vw;
+}
+
+button:not(.edit, .delete) {
+  background-color: #08b682;
+  padding: 0.4rem 1.5rem;
+  border: 0;
+  margin-top: 0.7rem;
+  color: white;
+}
+button.edit,
+button.delete {
+  height: 2rem;
+  width: 2rem;
+}
+
+aside {
+  display: flex;
+  column-gap: 10rem;
+  align-items: center;
+}
+
+aside h1 {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.alert {
+  color: #fff;
+  background: #e14634;
+  border-radius: 0.25rem;
+  text-align: center;
+  width: 40vw;
+}
+
+.hide {
+  display: none;
+}

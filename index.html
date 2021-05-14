@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3a9ec7e85b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Budget App</title>
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <h1>Budget App</h1>
+            <p class="alert hide">Values cannot be negative or empty</p>
+        </aside>
+        <div class="upper-boxes">
+            <div class="budget-box">
+                <h1>Enter Budget</h1>
+                <div class="budget-entry">
+                    <input type="number" id = "budget">
+                </div>
+                <button type = "submit" id = "budget-btn">Calculate</button>
+            </div>
+            <div class="budget-total-box">
+                <h1>Budget Total</h1>
+                <div class="budget-total">
+                    <p>$<span class ="show-budget-total">0</span></p>
+                </div>
+            </div>
+            <div class="balance-box">
+                <h1>Balance Total</h1>
+                <div class="balance">
+                    <p>$<span class ="show-balance-total">0</span></p>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="lower-boxes">
+            <div class="expense-box">
+                <h1>Enter Expense Title</h1>
+                <div class="expense-title">
+                    <input type="text" id = "expense-title">
+                </div>
+                <h1>Enter Expense Amount</h1>
+                <div class="expense-amount">
+                    <input type="number" id = "expense-value">
+                </div>
+                <button type = "submit" id = "expense-btn">Enter Expense</button>
+            </div>
+            
+            <div class="feedback-box">
+                <h2>Expense Details</h2>
+                <div class="expense-entry">
+                </div>
+            </div>
+            <div class="expense-total-box">
+                <h1>Expense Total</h1>
+                <div class="expense-total">
+                    <p>$<span class ="show-expense-total">0</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
